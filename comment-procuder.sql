@@ -5,7 +5,8 @@ exec Comments_Package.UpdateComment(1,'comment 222');
 exec Comments_Package.DeleteComment(1);
 exec Comments_Package.GetPostComments(1);
  
-create or replace package Comments_Package as
+create or replace package Comments_Package 
+as
 
 procedure GetComment(cid int);
 procedure InsertComment (cuserId int, cpostId int, ccontent varchar2);
