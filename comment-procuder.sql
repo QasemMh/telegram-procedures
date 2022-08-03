@@ -1,10 +1,12 @@
 
-exec Comments_Package.GetComment(1);
+exec Comments_Package.GetComment(3);
 exec Comments_Package.InsertComment(1,1,'comment 22');
 exec Comments_Package.UpdateComment(1,'comment 222');
 exec Comments_Package.DeleteComment(1);
 exec Comments_Package.GetPostComments(1);
- 
+
+-- add PROCEDURE to get user comments (all comments)
+
 create or replace package Comments_Package 
 as
 
@@ -13,6 +15,7 @@ procedure InsertComment (cuserId int, cpostId int, ccontent varchar2);
 procedure UpdateComment(cid int, ccontent varchar2);
 procedure DeleteComment(cid int);
 procedure GetPostComments(postId int);
+
 
 end Comments_Package;
 
@@ -62,23 +65,17 @@ select c.user_id,u.first_name,u.middle_name,u.last_name,u.image_path,u.login_id,
 DBMS_SQL.RETURN_RESULT(c_all);
 end;
 
+
+ 
+
 end Comments_Package;
 
 
 
-
--- admin-channel,user,login,
-
-select channel_admin.*, users.*, login.*
-from login
-join users on users.login_id =login.id
-join channel_admin on channel_admin.user_id = users.id
+ 
 
 
-
-
-
-
+ 
 
 
 
@@ -92,6 +89,5 @@ join channel_admin on channel_admin.user_id = users.id
 
 
  
-
-
+ 
 
