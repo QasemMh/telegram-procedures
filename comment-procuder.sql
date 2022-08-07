@@ -1,9 +1,12 @@
+ 
 
 exec Comments_Package.GetComment(3);
 exec Comments_Package.InsertComment(1,1,'comment 22');
 exec Comments_Package.UpdateComment(1,'comment 222');
 exec Comments_Package.DeleteComment(1);
 exec Comments_Package.GetPostComments(1);
+
+
 
 -- add PROCEDURE to get user comments (all comments)
 
@@ -61,7 +64,8 @@ select c.user_id,u.first_name,u.middle_name,u.last_name,u.image_path,u.login_id,
        from users u
        inner join comments c
        on c.user_id=u.id
-       where c.post_id = postId;
+       where c.post_id = postId
+       order by c.created_at desc;
 DBMS_SQL.RETURN_RESULT(c_all);
 end;
 
