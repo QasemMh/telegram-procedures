@@ -450,11 +450,13 @@ ADD image_path varchar2(255) null;
 
 
 
+ALTER TABLE Reaction
+ADD is_react  number ;
 
 
 
 
-
+ 
  
  
  
