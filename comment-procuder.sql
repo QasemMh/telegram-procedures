@@ -1,5 +1,7 @@
  
 
+
+
 exec Comments_Package.GetComment(3);
 exec Comments_Package.InsertComment(1,1,'comment 22');
 exec Comments_Package.UpdateComment(1,'comment 222');
@@ -29,7 +31,7 @@ procedure GetComment(cid int) as
 c_all sys_refcursor;
 begin
 open c_all for
-select c.user_id ,u.first_name,u.middle_name,u.last_name,u.image_path,u.login_id,
+select c.id,c.user_id ,u.first_name,u.middle_name,u.last_name,u.image_path,u.login_id,
        c.post_id,c.content,c.created_at
        from users u
        inner join comments c
@@ -43,6 +45,7 @@ begin
 insert into comments values(default, cuserId, cpostId, ccontent, default); 
 commit;
 end;
+
 procedure UpdateComment(cid int, ccontent varchar2) as
 begin
 update comments 
@@ -50,16 +53,18 @@ set content = ccontent, created_at = CURRENT_TIMESTAMP
 where id=cid;
 commit;
 end;
+
 procedure DeleteComment(cid int) as
 begin
 delete from comments where id=cid;
 commit;
 end;
+
 procedure GetPostComments(postId int) as
 c_all sys_refcursor;
 begin
 open c_all for
-select c.user_id,u.first_name,u.middle_name,u.last_name,u.image_path,u.login_id,
+select c.id,c.user_id,u.first_name,u.middle_name,u.last_name,u.image_path,u.login_id,
        c.post_id,c.content,c.created_at
        from users u
        inner join comments c
