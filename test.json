@@ -1,0 +1,71 @@
+[{
+  "id": 1,
+  "first_name": "Gretna",
+  "last_name": "Borless",
+  "email": "gborless0@wikispaces.com",
+  "gender": "Female",
+  "ip_address": "148.244.142.188"
+}, {
+  "id": 2,
+  "first_name": "Jillian",
+  "last_name": "Tribbeck",
+  "email": "jtribbeck1@biblegateway.com",
+  "gender": "Female",
+  "ip_address": "157.24.235.142"
+}, {
+  "id": 3,
+  "first_name": "Cristionna",
+  "last_name": "Disman",
+  "email": "cdisman2@dell.com",
+  "gender": "Agender",
+  "ip_address": "140.209.12.18"
+}, {
+  "id": 4,
+  "first_name": "Buckie",
+  "last_name": "Bosket",
+  "email": "bbosket3@bandcamp.com",
+  "gender": "Male",
+  "ip_address": "216.135.23.20"
+}, {
+  "id": 5,
+  "first_name": "Wenonah",
+  "last_name": "Kingstne",
+  "email": "wkingstne4@ovh.net",
+  "gender": "Female",
+  "ip_address": "201.70.198.12"
+}, {
+  "id": 6,
+  "first_name": "Manfred",
+  "last_name": "Crawley",
+  "email": "mcrawley5@umn.edu",
+  "gender": "Polygender",
+  "ip_address": "73.68.227.225"
+}, {
+  "id": 7,
+  "first_name": "Giulio",
+  "last_name": "Shelper",
+  "email": "gshelper6@dropbox.com",
+  "gender": "Male",
+  "ip_address": "245.27.27.153"
+}, {
+  "id": 8,
+  "first_name": "Lorene",
+  "last_name": "Bristo",
+  "email": "lbristo7@pbs.org",
+  "gender": "Female",
+  "ip_address": "143.147.173.56"
+}, {
+  "id": 9,
+  "first_name": "Vince",
+  "last_name": "Driussi",
+  "email": "vdriussi8@hp.com",
+  "gender": "Male",
+  "ip_address": "31.63.73.151"
+}, {
+  "id": 10,
+  "first_name": "Clair",
+  "last_name": "Pavlenko",
+  "email": "cpavlenko9@last.fm",
+  "gender": "Female",
+  "ip_address": "43.176.164.52"
+}]
