@@ -17,7 +17,7 @@
   "first_name": "Cristionna",
   "last_name": "Disman",
   "email": "cdisman2@dell.com",
-  "gender": "Agender",
+  "gender": "Male",
   "ip_address": "140.209.12.18"
 }, {
   "id": 4,
@@ -38,7 +38,7 @@
   "first_name": "Manfred",
   "last_name": "Crawley",
   "email": "mcrawley5@umn.edu",
-  "gender": "Polygender",
+  "gender": "Male",
   "ip_address": "73.68.227.225"
 }, {
   "id": 7,
